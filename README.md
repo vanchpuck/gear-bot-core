@@ -1,0 +1,3 @@
+![Build Status](https://codebuild.us-east-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiNitvOU5paUc0Mm13cWxJd2drcUJXR2pDQ1JuMWhYL3dIVUlFVGxUU2tRNWFiOVFLUS9WZytoK0VJOEw4anFpZWNSYnJBWnNHRnVIVVBuMFBqZ0xOcno4PSIsIml2UGFyYW1ldGVyU3BlYyI6IkhVbGJHNnA4emQzV1diRzgiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+# Gear Bot Core
+The common module for GearScanner bots.
