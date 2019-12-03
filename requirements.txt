@@ -1,0 +1,4 @@
+elasticsearch==6.4.0
+requests
+pytest
+boto3

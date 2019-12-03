@@ -1,0 +1,7 @@
+function.zip
+package
+__pycache__
+test/*.pyc
+*.iml
+.idea
+.pytest_cache

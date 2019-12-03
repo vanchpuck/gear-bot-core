@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+      python: 3.7
+      docker: 18
+  pre_build:
+    commands:
+      - command pip install -r requirements.txt
+  build:
+    commands:
+      - command echo Build started on `date`
+      - command docker-compose up -d
+      - command pytest test/
+      - command docker-compose down
