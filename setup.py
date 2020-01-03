@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="gear-bot-core",
-    version="0.0.1",
+    version="0.0.2",
     author="vanchpuck",
     author_email="vanchpuck@mail.ru",
     description="Core bot components for the GearScanner project",

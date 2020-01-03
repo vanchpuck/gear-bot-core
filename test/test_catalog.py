@@ -15,7 +15,7 @@ ELASTIC_HOST = "http://localhost:9200"
 
 class TestGearCatalog(unittest.TestCase):
 
-    catalog = gear.GearCatalog(ELASTIC_HOST, INDEX, PAGE_TABLE, DB_REGION_NAME, 2, DB_ENDPOINT_URL)
+    catalog = gear.GearCatalog(ELASTIC_HOST, INDEX, PAGE_TABLE, DB_REGION_NAME, 1, DB_ENDPOINT_URL)
 
     @classmethod
     def setUpClass(cls):
@@ -77,7 +77,6 @@ class TestGearCatalog(unittest.TestCase):
         self.assertEqual(
             catalog.get_products(chat_id, "Petzl lynx"),
             [
-                {'currency': 'USD', 'price': 300, 'store': 'rei', 'url': 'http://rei.com/meteor', 'name': 'Petzl Meteor', "normalizedName": 'Petzl Meteor'},
                 {'currency': 'USD', 'price': 200, 'url': 'http://rei.com/lynx', 'name': 'Petzl lynx', 'store': 'rei', 'oldPrice': 300, "normalizedName": 'Petzl lynx'}
             ]
         )
