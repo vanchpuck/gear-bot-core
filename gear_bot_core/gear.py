@@ -60,7 +60,7 @@ class GearCatalog:
                 "from": start_from, "size": self.page_size,
                 "query": {
                     "match": {
-                        "normalizedName": {
+                        "normalized_name": {
                             "query": query_str,
                             "fuzziness": "AUTO",
                             "operator":  "and"
